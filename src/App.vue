@@ -16,6 +16,7 @@ onMounted(() => {
   <header>
     <div class="wrapper">
       <nav>
+        <h1>hello ryf!</h1>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
