@@ -20,8 +20,8 @@ export default {
             const len = originCodeLine.length - 1
             const start =  line- 3 >= 0 ? line - 3 : 0
             const end = start + 5 >= len ? len : start + 5 // 最多展示6行
-            let newLines = []
-            for (var i = start; i <= end; i++) {
+            const newLines = []
+            for (let i = start; i <= end; i++) {
                 const content = i + 1 + '.    ' + this.encodeHTML(originCodeLine[i])
                 newLines.push(
                     `<div class='code-line ${i + 1 == line ? 'heightlight' : ''}'>${content}</div>`
