@@ -55,8 +55,8 @@ import PreView from './PreView.vue';
 const dialogVisible = ref(false);
 const tabActiveName = ref('local');
 const activeName = ref<string[]>(['1']);
-const js_error = ref<any>(null);
-const isError = ref(false);
+let js_error = ref<any>(null);
+let isError = ref(false);
 let stackFrameObj = {
   line: 0,
   column: 0,
@@ -109,7 +109,7 @@ const getSource = async (sourcemap: any, line: number, column: number) => {
     source,
     column: originalPosition.column,
     line: originalPosition.line,
-  } 
+  }
   } catch (e) {
     ElMessage.error('sourceMap解析失败');
   }
