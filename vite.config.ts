@@ -13,6 +13,17 @@ export default defineConfig({
     vueJsx(),
     vueDevTools(),
   ],
+  build: {
+    outDir: 'dist',
+    sourcemap: true,
+    // rollupOptions: {
+    //   output: {
+    //     entryFileNames: '[name].js',
+    //     chunkFileNames: '[name].js',
+    //     assetFileNames: '[name].[ext]',
+    //   },
+    // },
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

@@ -3,10 +3,10 @@ import { RouterLink, RouterView } from 'vue-router'
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  // let testNum = null;
-  // if(testNum.length > 1){
-  //   console.log('testNum is not null');
-  // }
+  let testNum = null;
+  if(testNum.length > 1){
+    console.log('testNum is not null');
+  }
 })
 
 
