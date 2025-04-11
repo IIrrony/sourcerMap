@@ -9,6 +9,7 @@ const getSourceMapUrl = async (url: string) => {
 
 const findCodeBySourceMap = async (stackFrame: any) => {
   // 获取map文件
+  // url + '存放map文件的服务器地址' + stackFrame.fileName + '.map'
   const sourceMapFile = await getSourceMapUrl(stackFrame.fileName + '.map');
   // 获取map文件
   const fileContent = sourceMapFile.data;
