@@ -1,2 +1,0 @@
-import{d as a,c,a as e,b as n,r as E,o as d}from"./index-rnBuCoQI.js";const f={class:"about"},v=a({__name:"ErrorView",setup(g){const s=()=>{null.length>0&&console.log("err!")},l=()=>{throw new ReferenceError("Hello")},i=()=>{throw new SyntaxError("Hello")};return(p,r)=>{const o=E("el-divider");return d(),c("div",f,[e("p",{onClick:r[0]||(r[0]=t=>s())},"触发TypeError"),n(o),e("p",{onClick:r[1]||(r[1]=t=>l())},"触发ReferenceError"),n(o),e("p",{onClick:r[2]||(r[2]=t=>i())},"触发SyntaxError")])}}});export{v as default};
-//# sourceMappingURL=ErrorView-C309mZhF.js.map
