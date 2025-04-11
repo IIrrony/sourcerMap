@@ -1,31 +1,29 @@
 <script setup lang="ts">
+// import { onMounted } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
-import { onMounted } from 'vue'
-
-onMounted(() => {
-  let testNum = null;
-  if(testNum.length > 1){
-    console.log('testNum is not null');
-  }
-})
-
-
+// import HelloWorld from './components/HelloWorld.vue'
+// onMounted(() => {
+//     let testNum = null;
+//     if (testNum!.length > 1) {
+//       console.log('报错了！');
+//     }
+// });
 </script>
 
 <template>
   <header>
+    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
     <div class="wrapper">
       <nav>
-        <h1>hello ryf!</h1>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/trigger">触发js异常</RouterLink>
       </nav>
     </div>
   </header>
 
   <RouterView />
 </template>
-
 <style scoped>
 header {
   line-height: 1.5;
@@ -80,12 +78,12 @@ nav a:first-of-type {
   }
 
   nav {
-    text-align: left;
-    margin-left: -1rem;
     font-size: 1rem;
+    /* text-align: left;
+    margin-left: -1rem;
 
     padding: 1rem 0;
-    margin-top: 1rem;
+    margin-top: 1rem; */
   }
 }
 </style>
